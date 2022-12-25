@@ -15,11 +15,18 @@ int main()
 
 int countNumber(int small,int large)
 {
-     int maximum=0;
-     int t=0;
+    if(small>large)
+    {
+        int swapp=small;
+        small=large;
+        large=swapp;
+
+    }
+    int maximum=0;
+    int t=0;
     for( int temp=large; temp>=small; temp--)
     {
-         int c=1;
+        int c=1;
         t=temp;
         while(t!=1)
         {
